@@ -24,12 +24,12 @@ body {
     background-color: transparent;
     z-index: 100;
 }
-
-.nav-bg {
-    position: absolute;
+/* 
+.nav-bg{ 
     background-color: hsla(0,0%,100%,.8);
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-}
+} */
 
 .navbar .navbar-mid {
     display: flex;
@@ -212,8 +212,13 @@ body {
     line-height: 1;
 }
 
+.footer-copyright {
+    color: #767676;
+}
+
 .footer-column-link {
     font-size: 20px;
+    color: #767676;
     margin-bottom: 24px;
     line-height: 1;
     transition: .2s ease-in;
