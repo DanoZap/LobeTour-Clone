@@ -17,9 +17,18 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10px;
     padding-left: 10vw;
     padding-right: 10vw;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.nav-bg {
+    position: absolute;
+    background-color: hsla(0,0%,100%,.8);
+    backdrop-filter: blur(20px);
 }
 
 .navbar .navbar-mid {
@@ -207,6 +216,11 @@ body {
     font-size: 20px;
     margin-bottom: 24px;
     line-height: 1;
+    transition: .2s ease-in;
+}
+
+.footer-column-link:hover {
+    transform: scale3d(1.05,1.05,1.05);
 }
 
 .social-links {
